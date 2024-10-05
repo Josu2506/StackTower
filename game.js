@@ -220,6 +220,7 @@ function moveAndDetectCollision() {
 canvas.onpointerdown = () => {
   if (mode === MODES.GAMEOVER) {
     restart();
+    score.textContent = 0;
   } else if (mode === MODES.BOUNCE) {
     mode = MODES.FALL;
   }
